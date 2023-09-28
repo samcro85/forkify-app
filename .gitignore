@@ -11,3 +11,7 @@ dist
 
 # Nei file aggiunti se facciamo delle modifiche accanto al file comapre la lettera 'M' che sta per modified, e nella riga dove è avvenuta la modifica compare un rettangolo verde.
 # Se lanciamo nuovamente 'git status' ci da la lista dei file tracciati e committed e la lista dei file modificati. Per tracciare i file modificati lanciamo 'git add -A'
+# Per avviare il commit digitiamo "git commit -m 'stringa di messaggio'"
+# Se vogliamo tornare alla versione precedente digitiamo 'git reset --hard HEAD'
+# Se vogliamo guardare i log di tutti i commit digitiamo 'git log'.
+# Se vogliamo ripristinare ad una versione precedente copiamo l'id del commit che leggiamo nel log e poi digitiamo 'git reset --hard id'
