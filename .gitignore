@@ -1,0 +1,13 @@
+node_modules
+# Dentro questo file mettiamo tutti i file e le cartelle che non vogliamo inserire nella nostra repository. In questo caso inseriremo la cartella 'dist' in quanto su GIT inseriamo il codice sorgente.
+dist
+.parcel-cache
+
+# Se usiamo MAC dobbiamo inserire un file che il sistema operativo crea automaticamente nelle directory
+.DS_Store
+
+# Poi sul terminale laciamo il comando 'git status' e ci da la lista dei file e cartelle non tracciate, e che quindi vogliamo mettere in repository nella 'Staging Area'
+# Per aggiungere tutti i file che ci servono lanciamo il comando 'git add -A'
+
+# Nei file aggiunti se facciamo delle modifiche accanto al file comapre la lettera 'M' che sta per modified, e nella riga dove è avvenuta la modifica compare un rettangolo verde.
+# Se lanciamo nuovamente 'git status' ci da la lista dei file tracciati e committed e la lista dei file modificati. Per tracciare i file modificati lanciamo 'git add -A'
