@@ -15,3 +15,5 @@ dist
 # Se vogliamo tornare alla versione precedente digitiamo 'git reset --hard HEAD'
 # Se vogliamo guardare i log di tutti i commit digitiamo 'git log'.
 # Se vogliamo ripristinare ad una versione precedente copiamo l'id del commit che leggiamo nel log e poi digitiamo 'git reset --hard id'
+# Se vogliamo visualizzare le branch del progetto inseriamo 'git branch' e l'asterisco accanto alla parola master sta ad indicare che è la branch sulla quale ci troviamo attualmente
+# Creare una branch significa creare una copia dell'attuale master branch nella quale possiamo lavora e apportare modifiche senza intaccare l'attuale master branch sulla quale abbiamo fatto il commit ed è funzionante. Per creare una branch digitiamo 'git branch nome_branch'. Per poter far lo switch di lavoro sulla nuova branch digitiamo 'git checkout nome-branch'
