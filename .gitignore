@@ -21,4 +21,4 @@ dist
 # Se tutto funziona e vogliamo importare le modifiche alla branch main, passiamo alla main tramite 'git checkout main' e poi digitiamo 'git merge nome-branch'.
 # Per importare il nostro progetto nella repository di GitHub incolliamo su terminale la linea di comando 'git remote add origin https://github.com/samcro85/forkify-app.git'. Questo comando aggiunge una branch remota chiamata 'origin' con l'URL. Con questo comando facciamo sapere alla nostra branch locale che esiste una branch remota di nome 'origin' a quell'URL.
 # Per aggiungere il codice alla branch remota digitiamo 'git push nome_branch_remota branch_codice'
-#  
+# Solitamente si crea la repo direttamente su GitHub con il file README e .gitignore e poi tramite comando 'pull' si importa la libreria remota sul computer.

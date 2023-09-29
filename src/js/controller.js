@@ -16,9 +16,7 @@ import 'regenerator-runtime/runtime';
 ///////////////////////////////////////
 // per installare l'ultima versione di parcel, o software in generale, da terminale digitiamo: npm i parcel@next -D
 
-// if (module.hot) {
-//   module.hot.accept();
-// }
+
 ///////////////////// ------ FUNCTIONS ------- /////////////////////
 
 // Creiamo una funziona che faccia le richieste HTTP per avere le ricette
@@ -42,7 +40,6 @@ const controlRecipes = async function () {
     recipeView.render(model.state.recipe);
   } catch (error) {
     recipeView.renderError();
-    console.error(error);
   }
 };
 
@@ -64,7 +61,7 @@ const controlSearchResults = async function () {
 
     // 3) Render results
     resultsView.render(model.getSearchResultPage());
-    console.log(model.state.search);
+    
 
     // 4) Render initial pagination buttons
     paginationView.render(model.state.search);
@@ -115,7 +112,7 @@ const controlAddRecipe = async function (newRecipe) {
 
     // Upload recipe data
     await model.uploadRecipe(newRecipe);
-    console.log(model.state.recipe);
+    
 
     // Render the recipe
     recipeView.render(model.state.recipe);
@@ -140,13 +137,9 @@ const controlAddRecipe = async function (newRecipe) {
       );
     })().then(() => setTimeout(() => addRecipeView._generateMarkup(), 1000));
   } catch (error) {
-    console.error(error);
+    
     addRecipeView.renderError(error.message);
   }
-};
-
-const newFeature = function () {
-  console.log('Welcome to the application');
 };
 
 const init = function () {
@@ -157,6 +150,5 @@ const init = function () {
   paginationView.addHandlerClick(controlPagination);
   recipeView.addHandlerUpdateServings(controlServings);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-  newFeature();
 };
 init();
